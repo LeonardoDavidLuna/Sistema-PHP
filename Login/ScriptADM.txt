@@ -1,0 +1,16 @@
+create database adm;
+
+use adm;
+
+CREATE TABLE usuarios (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  usuario VARCHAR(20) NOT NULL,
+  password VARCHAR(10) NOT NULL,
+  descripcion TEXT,
+  email VARCHAR(45),
+  fecha DATE NOT NULL,
+  PRIMARY KEY  (id));
+
+//ejemplo 
+Use adm;
+INSERT INTO usuarios(usuario,password,fecha) VALUES('Pedro','pbello','2010-06-10' ); 
